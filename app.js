@@ -35,7 +35,7 @@ app.post('/',function(req,res){
     auth: "SatyaPrakash:722589c30f9874997eea564a2637cf31-us1"
   }
   const request = https.request(url,options,function(response){
-    if(response.statusCode == 2002) {
+    if(response.statusCode == 200) {
       res.sendFile(__dirname+"/success.html");
     }
     else{
